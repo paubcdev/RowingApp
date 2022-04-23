@@ -1,3 +1,5 @@
+# v0.1 rower generation process under construction, now generates 3 variables: name+surname, age and weight
+
 import data_creator
 
 if __name__ == "__main__":
