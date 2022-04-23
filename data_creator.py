@@ -1,5 +1,5 @@
 import random
-from constants import MALES, FEMALES
+from constants import MALE_NAMES, FEMALE_NAMES, SURNAMES
 name = []
 age = []
 genders = []
@@ -12,9 +12,13 @@ age_group = input("Which category? ([j]unior, [s]enior, [m]asters) ")
 for i in range(0, size):
     # picks a name at random from the list of names in the constant and appends it to the output list
     if gender == 'male' or gender == 'm':
-        name.append(MALES[random.randint(0, len(MALES))])
+        rand_index = random.randint(0, len(MALE_NAMES))
+        name_surname = MALE_NAMES[rand_index] + " " + SURNAMES[rand_index] + "."
+        name.append(name_surname)
     elif gender == 'female' or gender == 'f':
-        name.append(FEMALES[random.randint(0, len(FEMALES))])
+        rand_index = random.randint(0, len(FEMALE_NAMES))
+        name_surname = FEMALE_NAMES[rand_index] + " " + SURNAMES[rand_index] + "."
+        name.append(name_surname)
     else:
         raise TypeError("Please specify a valid gender")
 
