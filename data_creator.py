@@ -19,7 +19,7 @@ def name_generator(gender, size):
     return name
 
 
-def age_generator(size):
+def age_generator(age_group, size):
     age = []
     for i in range(0, size):
         # picks an age at random from the specified age group
@@ -39,12 +39,3 @@ def weight_generator(size):
     for i in range(0, size):
         weight.append(round(random.uniform(70.0, 110.9), 2))
     return weight
-
-
-gender_ = input("What gender? ([m]ale, [f]emale) ")
-size_ = int(input("How many? "))
-age_group = input("Which category? ([j]unior, [s]enior, [m]asters) ")
-
-print(name_generator(gender_, size_))
-print(age_generator(size_))
-print(weight_generator(size_))
