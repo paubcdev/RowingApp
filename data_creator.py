@@ -45,20 +45,26 @@ def weight_generator(gender, size):
 
 
 def two_thousand_generator(gender, age_group, size):
-    two_thousand = []
+    two_thousand_sec = []
     for i in range(0, size):
         if gender == 'male' or gender == 'm':
             if age_group == 'junior' or age_group == 'j':
-                two_thousand.append(random.randrange(390, 480))
+                two_thousand_sec.append(random.randrange(390, 480))
             elif age_group == 'senior' or age_group == 's':
-                two_thousand.append((random.randrange(350, 460)))
+                two_thousand_sec.append((random.randrange(350, 460)))
             elif age_group == 'masters' or age_group == 'm':
-                two_thousand.append((random.randrange(400, 500)))
+                two_thousand_sec.append((random.randrange(400, 500)))
         elif gender == 'female' or gender == 'f':
             if age_group == 'junior' or age_group == 'j':
-                two_thousand.append(random.randrange(400, 490))
+                two_thousand_sec.append(random.randrange(400, 490))
             elif age_group == 'senior' or age_group == 's':
-                two_thousand.append((random.randrange(360, 470)))
+                two_thousand_sec.append((random.randrange(360, 470)))
             elif age_group == 'masters' or age_group == 'm':
-                two_thousand.append((random.randrange(410, 510)))
+                two_thousand_sec.append((random.randrange(410, 510)))
+    two_thousand = []
+    for j in two_thousand_sec:
+        m, s = divmod(j, 60)
+        min_sec = ("{}:{}".format(m, float(s)))
+        two_thousand.append(min_sec)
     return two_thousand
+
