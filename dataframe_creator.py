@@ -2,7 +2,9 @@ import data_creator
 import input_data
 import pandas as pd
 
-gender, size, age_group = input_data.input_data()
+gender = input_data.gender
+size = input_data.size
+age_group = input_data.age_group
 
 name_list = data_creator.name_generator(gender, size)
 age_list = data_creator.age_generator(age_group, size)
