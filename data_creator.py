@@ -7,15 +7,16 @@ def name_generator(gender, size):
     for i in range(0, size):
         # picks a name at random from the list of names in the constant and appends it to the output list
         if gender == 'male' or gender == 'm':
-            rand_index = random.randint(0, (len(MALE_NAMES)-1))  # because of list indexing, the actual length is 1 less
-            name_surname = MALE_NAMES[rand_index] + " " + SURNAMES[rand_index] + "."
-            name.append(name_surname)
+            rand_index_name = random.randint(0, (len(MALE_NAMES)-1))  # because list indexing, actual length is 1 less
+            rand_index_sur = random.randrange(0, (len(SURNAMES)-1))  # needs a different index for the surnames
+            name_surname = MALE_NAMES[rand_index_name] + " " + SURNAMES[rand_index_sur] + "."
         elif gender == 'female' or gender == 'f':
-            rand_index = random.randint(0, (len(FEMALE_NAMES)-1))  # same as before
-            name_surname = FEMALE_NAMES[rand_index] + " " + SURNAMES[rand_index] + "."
-            name.append(name_surname)
+            rand_index_name = random.randint(0, (len(FEMALE_NAMES) - 1))  # same
+            rand_index_sur = random.randrange(0, (len(SURNAMES) - 1))
+            name_surname = FEMALE_NAMES[rand_index_name] + " " + SURNAMES[rand_index_sur] + "."
         else:
             raise TypeError("Please specify a valid gender")
+        name.append(name_surname)
     return name
 
 
@@ -67,4 +68,3 @@ def two_thousand_generator(gender, age_group, size):
         min_sec = f"{m}:{float(s)}"
         two_thousand.append(min_sec)
     return two_thousand
-

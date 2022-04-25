@@ -1,4 +1,4 @@
-# v0.1-5 rower generation process under construction, now generates 4 variables: name+surname, age, weight and
+# v0.1.6 rower generation process under construction, now generates 4 variables: name+surname, age, weight and
 # a 2000m time, but just in seconds this time
 import dataframe_creator
 
