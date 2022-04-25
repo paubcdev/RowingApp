@@ -2,7 +2,7 @@ MALE_NAMES = ["Liam", "Noah", "Oliver", "Elijah", "William", "James", "Benjamin"
               "Mason", "Michael", "Ethan", "Daniel", "Jacob", "Logan", "Jackson", "Levi", "Sebastian", "Mateo",
               "Jack", "Owen", "Theo", "Aiden", "Sam", "Josh", "David", "Wyatt", "Matt", "Luke", "Ash", "Carter",
               "Julian", "Gray", "Leo", "Jayden", "Gabriel", "Isaac", "Lincoln", "Anthony", "Hudson", "Dylan",
-              "Ezra", "Thomas", "Charles", "Chris", "Jaxon", "Maverick", "Josiah"]
+              "Ezra", "Thomas", "Charles", "Chris", "Jaxon", "Maverick", "Josiah", "Paul"]
 
 FEMALE_NAMES = ["Olivia", "Emma", "Ava", "Charlotte", "Sophia", "Amelia", "Isabella", "Mia", "Evelyn", "Harper",
                 "Camila", "Gianna", "Abigail", "Luna", "Ella", "Elizabeth", "Sofia", "Emily", "Avery", "Mila",
