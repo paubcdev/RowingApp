@@ -64,7 +64,7 @@ def two_thousand_generator(gender, age_group, size):
     two_thousand = []
     for j in two_thousand_sec:
         m, s = divmod(j, 60)
-        min_sec = ("{}:{}".format(m, float(s)))
+        min_sec = f"{m}:{float(s)}"
         two_thousand.append(min_sec)
     return two_thousand
 
