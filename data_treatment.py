@@ -1,4 +1,10 @@
 from dataframe_creator import df
 
-slowest = df.loc[:, ['2000m time']].min()
-fastest = df.loc[:, ['2000m time']].max()
+fastest = df[df['2000m time'] == df['2000m time'].min()]
+slowest = df[df['2000m time'] == df['2000m time'].max()]
+
+heaviest = df[df['weight'] == df['weight'].max()]
+lightest = df[df['weight'] == df['weight'].max()]
+
+oldest = df[df['age'] == df['age'].max()]
+youngest = df[df['age'] == df['age'].max()]
