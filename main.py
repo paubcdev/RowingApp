@@ -7,7 +7,7 @@ if __name__ == "__main__":
     print("DataFrame:")
     print(dataframe_creator.df)
     sel = input("Do you want to export the data? (yes, no) ")
-    if sel == 'no' or sel == 'n' or sel == 'N' or sel == 'No':
+    if sel == 'no' or sel == 'n' or sel == 'N' or sel == 'No' or sel == 'NO':
         print(selector())
     else:
         exporter()

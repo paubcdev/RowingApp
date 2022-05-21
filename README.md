@@ -1,4 +1,4 @@
-# Rowing App v0.1.6
+# Rowing App v0.1.8
 An app to generate sets of rowers with pseudo-random traits to then treat that data.
 
 v0.1: Rower generation process implemented, name + age
