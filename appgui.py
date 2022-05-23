@@ -6,7 +6,7 @@ from tkinter import ttk
 def root_main():
     root = Tk()
     root.title("Rower generator")
-    # root.geometry("800x620")
+    # root.geometry("800x400")
 
     # Define frames
     number_frame = LabelFrame(root, text="Number of rowers: ", padx=5, pady=5)
@@ -34,6 +34,9 @@ def root_main():
     # Set the frames
     number_frame.grid(row=0, column=0, padx=5, pady=5, sticky=NW)
     gender_frame.grid(row=0, column=1, padx=5, pady=5, sticky=N)
+
+    close = Button(root, text="Close", width=10, command=root.quit)
+    close.grid(row=3, column=1, sticky=E)
 
     # Run the gui
     root.mainloop()
