@@ -16,4 +16,4 @@ v0.1.8: export capabilities implemented
 
 v0.2.0: started implementation of gui
 
-v0.2.1: implemented simple fastest data viewer
+v0.2.1: implemented simple data selector and viewer
