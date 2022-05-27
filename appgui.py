@@ -1,12 +1,17 @@
+import tkinter
 from tkinter import *
 from tkinter import Tk
 from tkinter import ttk
+# import dataframe_creator
 
 
 def root_main():
     root = Tk()
     root.title("Rower generator")
     # root.geometry("800x400")
+
+    def print_test(siz):
+        print(siz)
 
     # Define frames
     number_frame = LabelFrame(root, text="Number of rowers: ", padx=5, pady=5)
@@ -15,7 +20,7 @@ def root_main():
 
     # Define labels and entries for number
     number_label = Label(number_frame, text="Enter number: ")
-    number_entry = Entry(number_frame, width=30)
+    number_entry = Entry(number_frame, width=10)
 
     # Create dropdown menu for gender selection
     gender_list = ['Select one', 'Male', 'Female']
@@ -48,7 +53,10 @@ def root_main():
     gender_frame.grid(row=0, column=1, padx=5, pady=5, sticky=N)
     category_frame.grid(row=1, column=0, padx=5, pady=5, sticky=NW)
 
+    # Define and set the buttons
+    calculate = Button(root, text="Calculate", width=10, command=lambda: print_test(int(number_entry.get())))
     close = Button(root, text="Close", width=10, command=root.quit)
+    calculate.grid(row=2, column=1, sticky=E)
     close.grid(row=3, column=1, sticky=E)
 
     # Run the gui
