@@ -1,4 +1,3 @@
-import tkinter
 from tkinter import *
 from tkinter import Tk
 from tkinter import ttk
