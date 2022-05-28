@@ -1,4 +1,4 @@
-# Rowing App v0.2.0
+# Rowing App v0.2.2
 ***
 An app to generate sets of rowers with pseudo-random traits to then treat that data.
 
@@ -17,3 +17,5 @@ v0.1.8: export capabilities implemented
 v0.2.0: started implementation of gui
 
 v0.2.1: implemented simple data selector and viewer
+
+v0.2.2: started main gui menu implementation
